@@ -12,8 +12,9 @@ app.get("/", (req, res) => {
 
 // Endpoint to download the resume
 app.get("/download-resume", (req, res) => {
-  const file = path.join(__dirname, "public", "resume.pdf"); // Path to your resume file
-  res.download(file, "resume.pdf", (err) => {
+  const file = path.join(__dirname, "public", "resume/panji_swahastika.pdf"); // Path to your resume file
+  alert("masuk");
+  res.download(file, "resume/panji_swahastika.pdf", (err) => {
     if (err) {
       console.error("Error downloading the file:", err);
     }
