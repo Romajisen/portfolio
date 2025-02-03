@@ -1,207 +1,1197 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Romajisen</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/176494584?v=4" type="image/png"></head>
+<!-- <!DOCTYPE html> -->
+<html lang="en">
 
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Panji Swahastika | Software Developer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Panji Swahastika | Software Developer" />
+  <meta property="og:description" content="Software Developer" />
+  <meta property="og:url" content="https://Romajisen.github.io/" />
+  <meta property="og:site_name" content="Panji Swahastika | Software Developer" />
+  <meta property="article:publisher" content="https://Romajisen.github.io/" />
+  <meta property="og:image" content="https://Romajisen.github.io/examples/preview.JPG" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Panji_bhogayata" />
+  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+  <meta name="twitter:description" content="Software Developer" />
+  <meta name="twitter:url" content="https://twitter.com/Panji_bhogayata" />
+  <meta name="author" content="Panji Swahastika" />
+  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+</head>
+
+<body>  
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo dark-blue-text">
+          <img src="assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Open Panji's resume in a new tab" href="https://Romajisen.github.io/portfolio/assets/resume/PanjiSwahastika-Resume.pdf" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">PANJI
+        SWAHASTIKA</a><span class="black-text">Software Engineer</span>
     </div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/176494584?v=4) center;"></div>
-      <div id="username"><span style="display:block;">PANJI SWAHASTIKA</span><a href="https://github.com/Romajisen">@Romajisen</a></div>
-      <div id="userbio" style="display: block;">Software Engineer</div>
-      <div id="about">
-                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://www.linkedin.com/in/panji-swahastika-81320665">https://www.linkedin.com/in/panji-swahastika-81320665</a></span>
-                <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-                <div class="socials">
-                <span style="display:none !important;"><a href="https://www.twitter.com/null" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.linkedin.com/in/null/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+  </nav>
+
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Panji's Resume in a new tab"
+          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height" style="height: 730px;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l8">
+            <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+              <div class="caption">
+                <h2>Hi, I'm <span class="teal">Panji Swahastika.</span></h2>
+                <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+                <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+                <h5>Enthusiast Information Technology, Digital Transformation, Software Engineering, Full-Stack Developement, Business Analyst Solutions, Microsoft Office 365 Solutions Architect.</h5>
+              </div>              
+              <div class="social">
+                <a href="https://www.linkedin.com/in/panji-swahastika-81320665/" target="_blank">
+                  <button class="icon-btn linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/Romajisen/" target="_blank">
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+
+                <!-- <a href="https://id.jobstreet.com/id/profile/panji-swahastika-hScHhKLh24/" target="_blank">
+                  <button class="icon-btn jobstreet">
+                    <i class="fa fa-user"></i>
+                  </button>
+                </a>
+                <a href="https://wa.link/rhoxps/" target="_blank">
+                  <button class="icon-btn whatsapp">
+                    <i class="fa fa-whatsapp"></i>
+                  </button>
+                </a>
+                <a href="https://x.com/4I4h_Panji/" target="_blank">
+                    <button class="icon-btn twitter">
+                      <i class="fa fa-twitter"></i>
+                    </button>
+                </a>
+                <a href="https://web.facebook.com/swahastika.panji/" target="_blank">
+                    <button class="icon-btn facebook">
+                      <i class="fa fa-facebook"></i>
+                    </button>
+                </a> -->
+              </div>
+              <div class="buttons">
+                <a href="#about" class="readme">Read More</a>
+                <a href="#contact" class="contactme">Contact Me</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="image">
+                <img class="img-fluid" src="assets/img/portrait-hero.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text darkbl">About</h3>
+      <div class="container flow-text">
+        <blockquote>
+          <h2>
+            A Software Engineering with a passion for Backend Development and Artificial Intelligence Enthusiast.
+          </h2>
+        </blockquote>        
+        <p>
+          Accomplished IT Specialist with extensive experience in the Textile, FMCG, and manufacturing industries. Proficient in Microsoft Office 365 tools, including SharePoint, Power Automate, PowerApps, and Power Automate Desktop.
+          <br>
+          Skilled in full-stack development using technologies such as C#.NET, Angular, and Node.js, with expertise in managing robust database systems, including MSSQL, Oracle, and NoSQL. 
+          <br>
+          Demonstrated success in designing scalable solutions, managing complex projects, and enhancing operational efficiency to deliver business value.
+        </p>
+        <p>
+          <ul>
+            <li><b>Object-Oriented Programming (OOP) languages:</b> PHP, Java, JavaScript, C#, Golang, Phyton.</li>
+            <li><b>Databases:</b> Microsoft SQL Server, OracleDB, MariaDB, MySQL, PostgreSQL, MongoDB.</li>
+            <li><b>Libraries:</b>.Net Core, OpenCV, Qt, Requests, Lodash.</li>
+            <li><b>Frameworks:</b>.NetCore, Entity Framework, Django, TensorFlow, NUnit,  React Vue Angular Node.js, Exprees.js, TensorFlow, Laravel, CakePHP, Composer, NestJS, Gin, Gorm, Viper, Gokit, Logrus & etc.</li>
+            <li><b>Tools & Technologies:</b>Kubernetes, OpenShift, Docker, Redis, Jenkins, GitHub Actions, GitLab CI/CD, AWS, Google Cloud (GCP), Microsoft Azure, DigitalOcean, OWASP ZAP, Metasploit, OAuth, JWT, OpenID, Swagger Insomnia Postman, Mocha Js, Git Hub/Lab, Docker & Container, AWS, GCP, Azure, JIRA.</li>
+          </ul>
+        </p>
+        <code>
+          <p>
+            Seeking a challenging role that leverages my expertise in software engineering, allowing me to contribute effectively while fostering continuous learning, professional growth, and meaningful experiences.
+          </p>
+        </code>
+      </div>
+    </section>
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text darkbl">Experiences</h3>
+      <div class="container">
+        <!-- Latest Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://remote.co/remote-jobs/" target="_blank"><img alt="Remote Jobs"
+                    src="https://cdn5.f-cdn.com/contestentries/11013/4237391/16942-6547-1352306045509a8d7d4a601/Freelancer%20logo2_thumb900.jpg" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://remote.co/remote-jobs/" target="_blank"
+                      class="teal-text hoverline">Freelancer</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darkbl-2">Software Engineer</div>
+            <ul>
+              <li><strong>Responsibilities:</strong><ul>
+              <li>Designed and developed software solutions for various industries, including Textile, FMCG, and Manufacturing.</li>
+              <li>Managed full-stack development projects using C#.NET, Angular, Node.js, and other technologies.</li>
+              <li>Ensured robust database management with MSSQL, Oracle, MySQL, and NoSQL systems.</li>
+              <li>Provided technical support and troubleshooting for complex software issues.</li>
+              <li>Conducted code reviews and implemented best practices to maintain high-quality code standards.</li>
+              <li>Collaborated with cross-functional teams to deliver scalable and efficient software solutions.</li>
+              <li>Developed high-quality software solutions that improved operational efficiency and business value.</li>
+              <li>Successfully managed multiple projects simultaneously, meeting tight deadlines and client expectations.</li>
+              <li>Developed and maintained software applications using a variety of programming languages and tools.</li>
+              <li>Worked closely with clients to understand requirements and deliver customized solutions.</li>
+              <li>Implemented CI/CD pipelines to streamline development and deployment processes.</li>
+              <li>Utilized cloud technologies to enhance application scalability and performance.</li>
+            </ul>
+            </li>
+              <ul>
+                <li><strong>Key Achievements:</strong>
+                  <ul>
+                    <li>Successfully delivered multiple projects on time and within budget, exceeding client expectations.</li>
+                    <li>Improved application performance and reduced server resource consumption through effective use of Docker and other technologies.</li>
+                  </ul>
+                </li>
+              </ul>
+              <li><strong>Tools:</strong> C#.NET Core, PHP, Angular, Node.js, NestJS, Golang, MSSQL Server, MySQL, PostgreSQL, MariaDB, MongoDB.</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Nov 2024 - Now | Semarang, Indonesia</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://kino.co.id/" target="_blank"><img alt="Kino logo"
+                    src="https://kino.co.id/assets/image/logo.svg" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="http://Kino.co.id/" target="_blank"
+                      class="teal-text hoverline">PT Kino Indonesia, Tbk</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darkbl-2">Full-Stack Developer</div>
+            <ul>
+              <li><strong>Responsibilities:</strong><ul>
+                <li>Designed and deployed custom business applications using PowerApps, Power Automate, and SharePoint.</li>
+                <li>Led full-stack development with ASP.NET C#, PHP, AngularJS, and Node.js frameworks.</li>
+                <li>Ensured seamless database operations with MSSQL, MySQL, Oracle, and NoSQL systems.</li>
+                <li>Conducted operational checks, server load balancing, and system scheduler maintenance.</li>
+                <li>Collaborated with vendors for system updates and development initiatives.</li>
+                <li>Developed comprehensive reporting systems, enhancing decision-making processes.</li>
+                </ul>
+              </li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Optimized application performance, reducing load times by 40%.</li>
+                  <li>Successfully implemented paperless approval systems, saving $50,000 annually in operational costs.</li>
+                </ul>
+              </li>
+              <li><strong>Tools:</strong> PHP, C# .Net, MSSQL, MySQL, LowCode-NoCode</li>
+            </ul>            
+          </div>
+          <div class="card-action">
+            <span>Feb 2018 - June 2024 | Tangerang, Indonesia</span>
+          </div>
+        </div>
+        <!-- Experience 2 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <img alt="APF logo" src="https://www.asiapacificfibers.com/wp-content/uploads/2022/06/APF-Logo-Long-300x156.png" class="responsive-img center-block" />
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="#experience" class="teal-text hoverline">PT Asia Pacific Fibers, Tbk</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darkbl-2">Analyst and Project Leader</div>
+            <ul>
+              <li><strong>Responsibilities:</strong><ul>
+                  <li>Analyzed and upgraded systems and databases, replacing obsolete technologies.</li>
+                  <li>Delivered actionable insights through regular reporting and data analysis.</li>
+                  <li>Managed end-user project requests, ensuring timely and effective solutions.</li>
+                </ul>
+              </li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Reduced data processing time by 35% through optimized system designs.</li>
+                  <li>Led successful migration of legacy systems to modern platforms, improving reliability and performance.</li>
+                  <li>Improved all projects with 80% optimization and increased effectiveness.</li>
+                </ul>
+              </li>            
+              <li>
+                <b>Tools:</b> VB6/VB.Net, PHP, AngularJS, JavaScript, SQLSerevr, OracleDB, Crystal Report
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Sept 2012 - Feb 2018 | Kaliwungu-Kendal, Indonesia</span>
+          </div>
+        </div>
+        <!-- Experience 3 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="http://nextmercury.com/webwf/newnextm.nsf/" target="_blank"><img alt="nextmercury logo"
+                    src="http://nextmercury.com/xsp/webwf/newnextm.nsf/nextmercurylogo.gif?OpenImageResource&XSP_TMP_MARKER" class="responsive-img center-block" /></a>
+                    <img src="http://nextmercury.com/xsp/webwf/newnextm.nsf/NEXTMERCURYINDO_ICON.gif?OpenImageResource&XSP_TMP_MARKER" class="responsive-img center-block" />
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="http://nextmercury.com/webwf/newnextm.nsf/" target="_blank"
+                      class="teal-text hoverline">PT Nextmercury Indonesia</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darkbl-2">IT Developer</div>
+            <ul>
+              <li><strong>Responsibilities:</strong>
+                <ul>
+                  <li>Enhanced system integration and collaboration across organizations.</li>
+                  <li>Developed corporate websites and conducted system audits to ensure security and performance.</li>
+                </ul>
+              </li>
+              <li><strong>Key Achievements:</strong>
+                <ul>
+                  <li>Improved system security protocols, reducing vulnerabilities by 50%.</li>
+                  <li>Delivered multiple high-quality websites ahead of deadlines, boosting client satisfaction.</li>
+                </ul>
+              </li>            
+              <li>
+                <b>Tools:</b> Delphi7, PHP, IBM Lotus, OpenERP 6
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Feb 2009 - Nov 2011 | Bandung, Indonesia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text darkbl">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+            <!-- Kino Approvals System -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="Kino Approvals System" src="assets/img/project-kino-approvals.png" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">Kino Approvals System<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>A streamlined approval system reducing turnaround time.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> PowerApps, Power Automate, SharePoint</li>
+                    <li>Eliminated paper-based approval workflows.</li>
+                    <li>Saved operational costs and improved efficiency.</li>
+                  </ul>
+                <div class="card-action">
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                    <i class="fa fa-github"></i>
+                  </a>
                 </div>
                 </div>
-    </div>
-    <div id="display">
-      <div id="work">
-        <h1>Work.</h1>
-        <div class="projects" id="work_section">
-                        <a href="https://github.com/Romajisen/Youapp" target="_blank">
-                        <section>
-                            <div class="section_title">Youapp</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Romajisen/payment" target="_blank">
-                        <section>
-                            <div class="section_title">payment</div>
-                            <div class="about_section">
-                            <span style="display:block;">Bank payment standart</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Romajisen/GuestBook" target="_blank">
-                        <section>
-                            <div class="section_title">GuestBook</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Go</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Romajisen/e-Procurement-bidding-methode-" target="_blank">
-                        <section>
-                            <div class="section_title">e-Procurement-bidding-methode-</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Go</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Romajisen/apps-portal" target="_blank">
-                        <section>
-                            <div class="section_title">apps-portal</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Go</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Romajisen/company_api" target="_blank">
-                        <section>
-                            <div class="section_title">company_api</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Romajisen/portfolio" target="_blank">
-                        <section>
-                            <div class="section_title">portfolio</div>
-                            <div class="about_section">
-                            <span style="display:block;">Simple portofolio</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a></div>
+              </div>
+            </div>
+          
+            <!-- 5R System -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="5R System" src="assets/img/project-5r-system.png" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">5R System<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>A system for managing company’s 5R initiative.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> AngularJS, PHP, MSSQL</li>
+                    <li>Enabled tracking of workplace organization standards.</li>
+                    <li>Increased employee participation in 5R compliance.</li>
+                  </ul>
+                <div class="card-action">
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- RPA Cost Delivery Report -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="RPA Cost Delivery Report" src="assets/img/project-rpa-cost.png" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">RPA Cost Delivery Report<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Automated SAP integration with transporter management systems.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> Power Automate Desktop</li>
+                    <li>Reduced manual workload and improved accuracy.</li>
+                  </ul>
+                <div class="card-action">
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Distributor Email Notifications -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="Distributor Email Notifications" src="assets/img/project-email-notifications.png" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">Distributor Email Notifications<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Automated email alerts for tax invoices and delivery notes.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> PowerApps, Power Automate, SharePoint</li>
+                    <li>Improved communication with distributors.</li>
+                  </ul>
+                <div class="card-action">
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- E-Procurement System -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="E-Procurement System" src="assets/img/project-eprocurement.png" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">E-Procurement System<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>A bidding platform to simplify procurement for vendors.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> Golang, Vue.js, MariaDB</li>
+                    <li>Streamlined procurement and increased vendor engagement.</li>
+                  </ul>
+                <div class="card-action">
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Creative Job Requestor System -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="Creative Job Requestor System" src="assets/img/project-creative-job.png" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">Creative Job Requestor<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>A job request platform for creative teams.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> ASP.NET MVC, MSSQL</li>
+                    <li>Enhanced team collaboration and request tracking.</li>
+                  </ul>
+                <div class="card-action">
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          <!-- Portal and User Management System -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Portal and User Management System" src="assets/img/project-portal.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Portal and User Management<i class="mdi-navigation-more-vert right"></i></span>
+                <p>Centralized user access with single sign-on.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> ASP.NET MVC, MSSQL</li>
+                  <li>Improved user experience by consolidating access management.</li>
+                  <li>Enabled seamless authentication across multiple applications.</li>
+                </ul>
+              <div class="card-action">
+                <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                  <i class="fa fa-external-link"></i>
+                </a>
+                <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sport Center Registration System -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Sport Center Registration System" src="assets/img/project-sportcenter.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Sport Center Registration<i class="mdi-navigation-more-vert right"></i></span>
+                <p>Online booking system for company sport facilities.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> ASP.NET MVC, MSSQL</li>
+                  <li>Simplified the registration process for employees.</li>
+                  <li>Boosted facility usage and streamlined management.</li>
+                </ul>
+              <div class="card-action">
+                <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                  <i class="fa fa-external-link"></i>
+                </a>
+                <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Idea and Suggestion Register System -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Idea and Suggestion Register System" src="assets/img/project-ideas.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Idea & Suggestion Register<i class="mdi-navigation-more-vert right"></i></span>
+                <p>A platform for employees to submit ideas to management.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> ASP.NET MVC, MSSQL</li>
+                  <li>Encouraged innovation within the organization.</li>
+                  <li>Established an employee reward system for valuable ideas.</li>
+                </ul>
+              <div class="card-action">
+                <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                  <i class="fa fa-external-link"></i>
+                </a>
+                <a href="#" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Promotion Goods System -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Promotion Goods System" src="assets/img/project-promotion.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Promotion Goods System<i class="mdi-navigation-more-vert right"></i></span>
+                <p>A system for tracking promotional goods transactions.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> ASP.NET MVC, MSSQL</li>
+                  <li>Enhanced tracking and reporting for marketing teams.</li>
+                  <li>Improved efficiency in promotional goods distribution.</li>
+                </ul>
+              <div class="card-action">
+                <a href="https://apps.kino.co.id/epg" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online">
+                  <i class="fa fa-external-link"></i>
+                </a>
+                <a href="#" target="_blank" class="btn-floating btn-large waves-effect disabled" data-tooltip="View Source">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+                    
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">YouApp<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A horoscope user profile
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
+                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                  <li>Search and filter songs based on language and singer.</li>
+                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
+                  <li>Scroll through recently played/viewed songs.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://github.com/Romajisen/Youapp/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/Romajisen/music-player"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of web app" src="assets/img/project-blog-logo.jpg"
+                style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Banking System<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A banking payment standart.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b>C# .Net Core</li>
+                  <li>Users can view posting, transfer, withdraw, payment.</li>
+                  <li>Admin can Add, Delete, Update posts.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Blog website" href="https://github.com/Romajisen/payment/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/Romajisen/payment"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>          
+
+        </div>
       </div>
-      <div id="forks" style="display:none;">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section"></div>
-      </div>
-      <div id="blog_section">
-        <h1>Blog.</h1>
-        <div id="blogs"></div>
-      </div>
-      <div id="footer">
-        <a href="https://github.com/romajisen" target="_blank">made on earth by a human</a>
-      </div>
-    </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
+    </section>
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text darkbl">Skills</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/php.png" class="responsive-img" />PHP
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/Csharp.jpg" class="responsive-img" />C#
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/vbnet.png" class="responsive-img" />VB.Net
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/Golang_Logo.png" class="responsive-img" />Golang
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/js.jpg" class="responsive-img" />JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/mssqlserevr.jpg" class="responsive-img" />MSSQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/mariaDB.png" class="responsive-img" />MariaDB
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/postgresql-logo.png" class="responsive-img" />PostgreSQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/sqlite.png" class="responsive-img" />SQLite
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/MongoDB.png" class="responsive-img" />MongoDB
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Libraries</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/opencv-logo-1-500x500.jpg" class="responsive-img" />OpenCV
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/django-logo.webp" class="responsive-img" />Django
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/flask-logo.png" class="responsive-img" />Flask
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/bootstrap.png" class="responsive-img" />Bootstrap
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/keras-logo.png" class="responsive-img" />Keras
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/github.png" class="responsive-img" />GitHub
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/gitlab.png" class="responsive-img" />GitLab
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/azure.png" class="responsive-img" />Azure Devops
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/docker.png" class="responsive-img" />Contianer
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/Others.png" class="responsive-img" />Tech Stack
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m6 l3">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/img/office365_copilot.png">
+                      </div>
+                      <div class="card-content">
+                        <a class="hoverline"  href="https://seekmax.jobstreet.com/certificates/2024-12-28/Sertifikat+Pelatihan+Dasar+Microsoft+365+Copilot+-+Panji+Swahastika.pdf?Expires=1743046199&Key-Pair-Id=K1I1KE1QMK6NCZ&Signature=XfOPgvUzBgMGJbHs9EJpI3wU2B~BAiNvGpND7rWyzwLfECgDQU-i9uFbIZRZYZAyRYO~7wNc9z7WJzeCrFL9MteQwGcqrGs0rx18aaP1H2nz7P-XbaS32EXizxTzNMx75IY4l15U0KFHlqiMkEtCqO1vy-7ZTRH53630MDEwzX~FmSBMyG3KgI-PA-Cc1JoXzyWxYdDvwesLpEmsbkXpslErQi52sXJySqXFD7prRfz6-xEhEn4A1k2z394hVKhAD2gkO~uJXmfOs3oJM7bsspoFXjnHb1PaNweTHBkVZD5yPTj0atnaLeiXtflQuBPyC2qSi0ENuR9ywaj5-MrI-g__"><span class="card-title teal-text">Office365 Co-pilot (Jobstreet)</span></a> 
+                      </div>
                     </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
+                  </div>
+                  <div class="col s12 m6 l3">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/img/project _management.png">
+                      </div>
+                      <div class="card-content">
+                        <a class="hoverline"  href="https://seekmax.jobstreet.com/certificates/2025-01-18/Jago+Project+Management+dari+NoI+Certificate+-+Panji+Swahastika.pdf?Expires=1744872017&Key-Pair-Id=K1I1KE1QMK6NCZ&Signature=VY9IhpxgCtVRZfVxA-hL332qi0-YXPJVlAbdOO0r9KGuLnDKs~8zcigr-qrdJ6n113jE32OkGlKhbtMV4j0Ot-4FxJmXn3YU2IDp3wEIV0V9O22MBsJ3FUw5tFMtjt0ht1Rgd5ZazfJSLbWJSRETCdI9qmajAdD1j6Ejiwz1YNyavSS2jGLc2iF9IdDbw5FV7y7dSh~8yx2UX93qV3f9rNuxFnk8sxLxqvp7-Q0oGkeeBjJ1WBw0F8edef2JRq86G8yy0WzIGOYn3O7aN6bzvbzjCNaUIcTjwurfhE38QVsRGUQZnyxCj0AwmZZkq44z7w89HBXoBuiLtgN4tcTung__"><span class="card-title teal-text">Project Management (Microsoft)</span></a> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6 l3">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/img/software-engineer.png">                                                 
+                      </div>
+                      <div class="card-content">
+                        <a class="hoverline"  href="https://www.testdome.com/certificates/a53634f6835f4719b1efbbb0fd0b40af"><span class="card-title teal-text">Software Engineer (TestDome)</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6 l3">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/img/Excel_DA.png">
+                      </div>
+                      <div class="card-content">
+                        <a class="hoverline"  href="https://seekmax.jobstreet.com/certificates/2025-01-09/Analisis+Data+Excel+Certificate+-+Panji+Swahastika.pdf?Expires=1744088478&Key-Pair-Id=K1I1KE1QMK6NCZ&Signature=TUR6z-~cYZNfOWqbAcQlGl4dDeDtW0PBmweWRydU6XDfUsNR-USv~oNOcoYh9kGjV3a~JAQFnjs6iq1acXx7VU-P2FLMlXtl2jwSaVDXblBb9CnDqo~EsNRz2Oe3Jmf9DcF0zzA5ZIfkBjQyo5LojzOMvCIoJXQLAHZtwsnB1TbpizRFMBbJ2BOTVhPspXwWMsieoDJdHsm59RqrlGVxyeXE3IXiB2IDrTMC0xuw3CYRTzPQWDS0FAfLQ4XCI2zDryi5sLbL0-Q9yqixf4WcM1m-zw2mWtw9jlIRBp5GCa9~OHMdkEGs2dtPh8p5oj9OM505oL~RIrr-4gmaBGSQlA__"><span class="card-title teal-text">Excel Data Analyst (Microsoft)</span></a> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: "#work_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
+      </div>
+    </section>
+    <!-- Seventh Section: Education -->
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text darkbl">Education</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Education -->
+          <div class="col s12 m12 l12">
+            <div class="card">
+              <div class="card-content">
+                
+                <div class="row">
+                  <div class="col s12 m3">
+                    <a href="https://www.unisbank.ac.id/v3" target="_blank"><img alt="Kino logo"
+                        src="https://www.unisbank.ac.id/v3/wp-content/uploads/2022/08/Logo-UNISBANK.jpg" class="responsive-img center-block" /></a>
+                  </div>
 
-      const magicForksGrid = new MagicGrid({
-        container: "#forks_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
+                <p>
+                  <span class="card-title" ><a href="https://www.unisbank.ac.id/v3/" target="_blank" class="teal-text hoverline">Stikubank University of Semarang</a></span>
+                </p>
+                </div>
+                <p class="brown-text">Central Java, Indonesia</p>
+                <p>
+                  <b>Degree: </b>Bachelor’s Degree in Information Systems       
+                  <br>
+                  <b>CGPA: </b>3.0/4.0
+                </p>
 
-      $("document").ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-      });
-    </script>
-  
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                  <ul>
+                    <div class="col s12 m6 l4">
+                      <li>ALGORITMA DAN STRUKTUR DATA 1</li>
+                      <li>PRAKTIKUM SISTEM OPERASI</li>
+                      <li>ALGORITMA DAN STRUKTUR DATA 2</li>
+                      <li>PRAKTIKUM PEMROGRAMAN BERORIENTASI OBYEK</li>
+                      <li>SISTEM PENUNJANG KEPUTUSAN</li>
+                      <li>INTERAKSI MANUSIA DAN KOMPUTER</li>
+                      <li>PAKET PROGRAM APLIKASI</li>
+                      <li>METODE PENGEMBANGAN SISTEM INFORMASI</li>
+                      <li>PEMROGRAMAN WEB</li>
+                      <li>SISTEM OPERASI</li>
+                      <li>DESIGN DAN DEVELOPMENT WEB</li>
+                      <li>PEMROGRAMAN BERORIENTASI OBYEK 1</li>
+                      <li>SISTEM MULTIMEDIA</li>
+                    </div>
+                    <div class="col s12 m6 l4">
+                      <li>BAHASA INGGRIS 1</li>
+                      <li>KONSEP SISTEM INFORMASI</li>
+                      <li>ANALISA KINERJA SISTEM</li>
+                      <li>PENGANTAR MANAJEMEN</li>
+                      <li>PEMROGRAMAN BERORIENTASI OBYEK 2</li>
+                      <li>LOGIKA MATEMATIKA 1 </li>
+                      <li>RISET TEKNOLOGI INFORMASI</li>
+                      <li>SISTEM BASIS DATA</li>
+                      <li>PEMELIHARAAN SISTEM INFORMASI </li>
+                      <li>BAHASA INGGRIS 2</li>
+                      <li>KEAMANAN KOMPUTER</li>
+                      <li>PENGANTAR TEKNOLOGI INFORMASI </li>
+                      <li>REKAYASA PERANGKAT LUNAK</li>
+                      <li> LOGIKA MATEMATIKA 2 </li>
+                    </div>
+                    <div class="col s12 m6 l4">
+                      <li> DATA MINING</li>
+                      <li> AKUNTANSI DASAR</li>
+                      <li> JARINGAN SYARAF TIRUAN</li>
+                      <li> ANALISA DAN PERANCANGAN SISTEM INFORMASI</li>
+                      <li>E-BUSINESS</li>
+                      <li>SISTEM INFORMASI MANAJEMEN B</li>
+                      <li>SKRIPSI</li>
+                      <li>BAHASA PEMROGRAMAN 1 </li>
+                      <li>ALJABAR LINIER B</li>
+                      <li>ANALISA PROSES BISNIS</li>
+                      <li>TEORI ORGANISASI</li>
+                      <li>ANALISA DAN PERANCANGAN SISTEM INFORMASI 2</li>
+                    </div>
+                  </ul>
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/" target="_blank" class="teal-text hoverline">School of Engineering and Applied Science, Ahmedabad
+                      University</a></span>
+                </p>
+                <p class="brown-text">Ahmedabad, India</p>
+                <p>
+                  <b>Degree: </b>Bachelor of Technology in Information and Communication Technology
+                  <br>
+                  <b>CGPA: </b>3.13/4.33
+                </p>
 
-</body></html>
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                  <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Database Management Systems</li>
+                    <li>Operating Systems</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                  </ul>
+                  </p>
+
+                </ul>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text darkbl">Contact</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">                
+                <p>
+                  <a aria-label="Call Panji" data-position="top" data-tooltip="Call Panji" href="https://id.jobstreet.com/id/profile/panji-swahastika-hScHhKLh24/" target="_blank"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-whatsapp"></i><a
+                      aria-label="Call Panji">whatsapp</a></a>
+                </p>
+                <p>
+                  <a aria-label="Call Panji" data-position="top" data-tooltip="Call Panji"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-whatsapp"></i><a
+                      aria-label="Call Panji">+6281 327 584 994</a></a>
+                </p>
+                <p>
+                  <a aria-label="Email Panji" href="mailto:panji.swahastika@protonmail.com" target="_blank" data-position="top"
+                    data-tooltip="Email Panji" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-envelope"></i><a aria-label="Email Panji" href="mailto:panji.swahastika@protonmail.com"
+                      class="hoverline">panji.swahastika@protonmail.com</a></a>
+                </p>
+                <p>
+                  <a aria-label="View Panji on GitHub" href="http://github.com/Romajisen" target="_blank"
+                    data-position="top" data-tooltip="View Panji on GitHub"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+                      aria-label="Panji on Github" href="http://github.com/Romajisen" class="hoverline"
+                      target="_blank">github.com/Romajisen</a></a>
+                </p>
+                <p>
+                  <a aria-label="View Panji on LinkedIn" href="https://www.linkedin.com/in/panji-swahastika-81320665" target="_blank"
+                    data-position="top" data-tooltip="View Panji on LinkedIn"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-linkedin"></i><a aria-label="Panji on LinkedIn" href="https://www.linkedin.com/in/panji-swahastika-81320665"
+                      class="hoverline" target="_blank">linkedin.com/in/panji-swahastika-81320665</a></a>
+                </p>
+                <p>
+                  <a aria-label="View Panji on jobstreet href="https://id.jobstreet.com/id/profile/panji-swahastika-hScHhKLh24/" target="_blank"
+                    data-position="top" data-tooltip="View Panji on user"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-user"></i><a aria-label="Panji on user" href="https://id.jobstreet.com/id/profile/panji-swahastika-hScHhKLh24/"
+                      class="hoverline" target="_blank">Jobstreet</a></a>
+                </p>
+                <p>
+                  <a aria-label="View Panji on jobstreet href="https://x.com/4I4h_Panji/" target="_blank"
+                    data-position="top" data-tooltip="View Panji on twitter"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-twitter"></i><a aria-label="Panji on twitter" href="https://x.com/4I4h_Panji/"
+                      class="hoverline" target="_blank">Twitter</a></a>
+                </p>
+                <p>
+                  <a aria-label="View Panji on facebook href="https://web.facebook.com/swahastika.panji/" target="_blank"
+                    data-position="top" data-tooltip="View Panji on facebook"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-facebook"></i><a aria-label="Panji on facebook" href="https://web.facebook.com/swahastika.panji/"
+                      class="hoverline" target="_blank">facebook</a></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Software Engineer", "Backend Developer", "Fast Learner", "Teamworker", "Problem Solver", "Quick Thinker"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+  <script> var stylesheet = "https://www.testdome.com/content/certificates/embed.css"; link = document.createElement("link"); link.href = stylesheet; link.type = "text/css"; link.rel = "stylesheet"; link.media = "screen,print"; document.getElementsByTagName("head")[0].appendChild(link); </script>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+</body>
+</html>
